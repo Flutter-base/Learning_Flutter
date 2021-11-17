@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/Pages/home_page.dart';
+import 'package:myapp/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
         color: Colors.white,
-        child: Column(
+        child: SingleChildScrollView(
+            child: Column(
           children: [
             Image.asset(
               "assets/images/login_img.png",
@@ -39,20 +41,22 @@ class LoginPage extends StatelessWidget {
                     obscureText: true,
                   ),
                   const SizedBox(
-                    height: 15.0,
+                    height: 20.0,
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.HomeRoute);
+                    },
                     child: const Text("Login"),
                     style: ElevatedButton.styleFrom(
                         textStyle: const TextStyle(fontSize: 20),
                         padding: const EdgeInsets.symmetric(
-                            vertical: 12.0, horizontal: 19.0)),
+                            vertical: 12.0, horizontal: 26.0)),
                   ),
                 ],
               ),
             )
           ],
-        ));
+        )));
   }
 }
