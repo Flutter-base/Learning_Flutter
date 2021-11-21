@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     int days = 30;
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Flutter"),
+        title: const Text("Catalog"),
       ),
       body: Center(
         child: Container(
