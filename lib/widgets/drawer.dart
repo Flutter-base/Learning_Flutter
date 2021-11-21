@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final imageUrl =
+    const imageUrl =
         "https://www.shareicon.net/data/2015/11/12/164185_man_512x512.png";
     return Drawer(
       child: Container(
